@@ -9,8 +9,8 @@
     <style>
         #logo-circle {
             display: inline-block;
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             margin: 6px;
             background-color: #555;
         }
@@ -46,15 +46,13 @@
             }
             .carousel-bg{
                 background-image: url('images/carsoule-bg.png');
-                background-attachment: fixed;
+                background-attachment: scroll;
                 background-size: cover;
             }
             /* Default styles for all devices */
             .menu-sm-bar{
             display: none; /* Hide the element by default */
             }
-            
-
             /* Media query to show the element on screens less than 920px wide */
             @media only screen and (max-width: 920px) {
                 .menu-sm-bar {
@@ -91,7 +89,7 @@
     <!--  -->
     <div class="header">
         <div class="container-fluid">
-            <div class="row  justify-content-between bg-black">
+            <div class="row justify-content-between bg-black">
                 <div class="col align-self-center">
                     <div class="d-flex justify-content-start">
                         <div class="align-self-center">
@@ -146,13 +144,19 @@
     <div class="content" >
         
         <div class="container-fluid">
-            <div class="container px-4 pt-1" style="padding-left: 10px;">
+            <div class="container" style="padding-left: 10px;">
             
-                <strong>Recent Post</strong>
+                <div class="d-flex align-items-stretch ">
+                    <div class="p2 flex-grow-1 align-self-center"><span><strong>Recent Post</strong></div>
+                    <div class="p2 align-self-center"><input type="text" name="search" id="search" placeholder="Search by author or topic"></div>
+                    <div class="p2 align-self-center"><button class="btn btn-outline-secondary" type="button" name="search-btn" id="search-btn">search</button></div>
+                </div>
+            </span>
+                
             </div>
-            <div class="row justify-content-around">
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+            <div class="row d-flex justify-content-around mt-2">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>IoT
                             <span class="align-self-center" style="float: right;">30K
                                 <a href="#">   
@@ -172,8 +176,68 @@
                     </div>
                 </div>
                 
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
+                        <p><strong>Topic:</strong>Computer networks
+                            <span class="align-self-center" style="float: right;">30K
+                                <a href="#">   
+                                    <img src="images/icons8-like-50.png" alt="like" style="width: 20px;height:20px;">
+                               </a>
+                                </span> 
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
+                        </p>
+                        <p><strong>Author:</strong>Ram
+                            <span class="align-self-center" style="float: right;">
+                                12.12.2023
+                            </span> </p>
+                        </p>
+                    </div>    
+                </div>
+                
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
+                        <p><strong>Topic:</strong>OS
+                            <span class="align-self-center" style="float: right;">30K
+                                <a href="#">   
+                                    <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
+                               </a>
+                                </span> 
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
+                        </p>
+                        <p><strong>Author:</strong>Ram
+                            <span class="align-self-center" style="float: right;">
+                                12.12.2023
+                            </span> </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
+                        <p><strong>Topic:</strong>IoT
+                            <span class="align-self-center" style="float: right;">30K
+                                <a href="#">   
+                                    <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
+                               </a>
+                            </span> 
+                                
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
+                        </p>
+                        <p><strong>Author:</strong>Ram
+                            <span class="align-self-center" style="float: right;">
+                                12.12.2023
+                            </span> </p>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>Computer networks
                             <span class="align-self-center" style="float: right;">30K
                                 <a href="#">   
@@ -192,8 +256,8 @@
                     </div>    
                 </div>
                 
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>OS
                             <span class="align-self-center" style="float: right;">30K
                                 <a href="#">   
@@ -211,14 +275,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>IoT
                             <span class="align-self-center" style="float: right;">30K
-                            <a href="#">   
-                                 <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
-                            </a>
+                                <a href="#">   
+                                    <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
+                               </a>
                             </span> 
+                                
                         </p>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
@@ -231,14 +296,15 @@
                     </div>
                 </div>
                 
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>Computer networks
                             <span class="align-self-center" style="float: right;">30K
                                 <a href="#">   
                                     <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
                                </a>
-                                </span> </p>
+                                </span> 
+                        </p>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
                         </p>
@@ -247,74 +313,18 @@
                                 12.12.2023
                             </span> </p>
                         </p>
-                    </div>
+                    </div>    
                 </div>
                 
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
+                <div class="col-sm-3 m-2 shadow align-self-center" style="width: 400px;">
+                    <div class="p-2 m-2 bg-white">
                         <p><strong>Topic:</strong>OS
                             <span class="align-self-center" style="float: right;">30K
                                 <a href="#">   
                                     <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
                                </a>
-                            </span> </p>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
+                                </span> 
                         </p>
-                        <p><strong>Author:</strong>Ram
-                            <span class="align-self-center" style="float: right;">
-                                12.12.2023
-                            </span> </p>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
-                        <p><strong>Topic:</strong>IoT
-                            <span class="align-self-center" style="float: right;">30K
-                            <a href="#">   
-                                 <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
-                            </a>
-                            </span> 
-                        </p>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
-                        </p>
-                        <p><strong>Author:</strong>Ram
-                            <span class="align-self-center" style="float: right;">
-                                12.12.2023
-                            </span> </p>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
-                        <p><strong>Topic:</strong>Computer networks
-                            <span class="align-self-center" style="float: right;">30K
-                                <a href="#">   
-                                    <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
-                               </a>
-                                </span> </p>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
-                        </p>
-                        <p><strong>Author:</strong>Ram
-                            <span class="align-self-center" style="float: right;">
-                                12.12.2023
-                            </span> </p>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-sm-3 m-2" style="width: 400px;">
-                    <div class="shadow-sm p-4 m-4 bg-white">
-                        <p><strong>Topic:</strong>OS
-                            <span class="align-self-center" style="float: right;">30K
-                                <a href="#">   
-                                    <img src="images/icons8-like-50.png" alt="" style="width: 20px;height:20px;">
-                               </a>
-                            </span> </p>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat doloribus repudiandae corrupti consectetur pariatur, voluptatem quidem exercitationem a nesciunt eaque! Error iusto nostrum perspiciatis harum. Ipsam explicabo saepe fuga dolor....<a href="#">readmore..</a>
                         </p>
